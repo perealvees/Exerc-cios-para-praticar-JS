@@ -1,9 +1,14 @@
-/* Crie uma função que: 
-  se a pessoa estiver com mais de 37,5
+/*- Crie uma função TEMPERATURA que: 
+  Se a pessoa estiver com mais de 37,5
   apareça uma mensagem de "Esta com febre", caso contrário, mostre "Saudável"  
-
   Depois crie outra fazendo a mesma coisa, mas adicionando um terceiro valor
   dizendo "Temperatura muito baixa"
+
+  - Crie um script com duas variáveis, IDADE E GÊNERO
+    o resultado deve dizer se a pessoa é do genero Feminino ou Masculino e
+    se a pessoa é adolecente ou adulta.
+
+
 */
 
 function temp (){
@@ -29,7 +34,26 @@ function temp2 (){
     
 }
 
+function idadeGenero(){
+    var genero = 'Masculino'
+    var idade = 23
 
+    if(genero == 'Feminino'){
+        if (idade < 18) {
+            console.log('Você é uma jovem menor de 18 anos')
+        } else {
+            console.log('Você ja é uma mulher adulta')
+        } 
+    } else if (genero == 'Masculino') {
+        if (idade < 18) {
+            console.log('Você é um jovem menor de 18 anos')
+        } else {
+            console.log('Você ja é um homem adulto')
+        } 
+
+    }
+}    
 
 //temp();
 //temp2();
+// idadeGenero();
