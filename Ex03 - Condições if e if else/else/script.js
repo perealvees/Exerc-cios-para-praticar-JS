@@ -8,6 +8,10 @@
     o resultado deve dizer se a pessoa é do genero Feminino ou Masculino e
     se a pessoa é adolecente ou adulta.
 
+ - Crie um script com uma variavel numérica usando o if else if, onde a pessoa tem que
+  colocar um número de 0 a 5 e você te que retornar esse número por extenso 
+
+ - Repita o exercício anterio mas no lugar do if use o switch case    
 
 */
 
@@ -54,6 +58,63 @@ function idadeGenero(){
     }
 }    
 
+function numeroExtenso(){
+
+    
+    var numero =  prompt('Digite um número de 1 a 5: ')
+    
+    
+    if (numero == 1){
+        alert(`Você digitou o número ${numero}. Em extenso fica "UM".`)
+    } else if (numero == 2) {
+        alert(`Você digitou o número ${numero}. Em extenso fica "DOIS".`)
+    } else if (numero == 3) {
+        alert(`Você digitou o número ${numero}. Em extenso fica "TRÊS".`)
+    } else if (numero == 4) {
+        alert(`Você digitou o número ${numero}. Em extenso fica "QUATRO".`)
+    } else if (numero == 5) {
+        alert(`Você digitou o número ${numero}. Em extenso fica "CINCO".`)
+    } else {
+        alert('Digite um valor de 1 a 5.')
+    }
+
+
+}
+
+function numExtSwitch(){
+    let numero = 5
+    
+    switch (numero){
+        case 1:
+        alert(`Você digitou o número ${numero}. Em extenso fica "UM".`)
+            break;
+
+        case 2:
+        alert(`Você digitou o número ${numero}. Em extenso fica "DOIS".`)    
+            break;
+
+        case 3:
+        alert(`Você digitou o número ${numero}. Em extenso fica "TRÊS".`)    
+            break;
+
+        case 4:
+
+        alert(`Você digitou o número ${numero}. Em extenso fica "QUATRO".`)    
+            break;
+
+        case 5: 
+        alert(`Você digitou o número ${numero}. Em extenso fica "CINCO".`) 
+            break;
+        
+        default:
+            alert('Numero errado. Digite um número de 1 a 5')    
+
+    } 
+
+}
+
 //temp();
 //temp2();
 // idadeGenero();
+//numeroExtenso();
+numExtSwitch();
